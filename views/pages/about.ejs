@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- STYLESHEET -->
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <!-- BOOTSTRAP CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <!-- FONT AWESOME CDN -->
+  <script src="https://kit.fontawesome.com/0581082bd4.js" crossorigin="anonymous"></script>
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <title>Amason: Low Prices in every department</title>
+</head>
+
+<body onload="myFunction()">
+  <div id="loading"></div>
+
+  <!-- NAVBAR -->
+
+  <section id="navbar">
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">
+          <img src="images/amazon-logo.svg" alt="logo-image" width="30" height="30" class="d-inline-block align-text-top">
+          <span class="navbrand-span">Amason</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse text-center" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/products">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact">Contact us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/cart"><i class="fa-solid fa-cart-shopping"></i> Cart</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/logout"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+</section>
+
+<section id="maindisplay" class="py-5 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-bold">About <span style="color: red;">Amason</span></h1>
+        <p class="lead text-muted">Uh Oh! Stuck on something? Wanted to know more about something? <br/> This is the one-stop solution for all the queries. <br/>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT THE COMPANY -->
+  <section id="aboutthecompany">
+  <div class="album py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-lg-6">
+                <div class="card mb-3">
+                    <div class="card-header">
+                      About this Website
+                    </div>
+                    <div class="card-body">
+                      <blockquote class="blockquote mb-0">
+                        <p style="text-align: justify;">This E-Commerce website is designed & developed by <span style="font-weight: bold;">Anupam Pammi.</span> <u style="color: red;">The offers and discounts to avail in this website does not apply in the real world.</u> The example of this website is taken with inspiration of several E-Commerce websites designed by various designers. This entire website is being developed with HTML | CSS | BOOTSTRAP | JS | Node | EJS | Express | PHP. <br/>
+                        There are some bugs which i have faced while developing this website. Some of these bugs include 
+                      <ul>
+                        <li>While making the static images into live images from the database.</li>
+                        <li>JEPG images needs to be reized and reformatted to match the card width and height equally between all the images.</li>
+                        <li>Integrating the backened functions of calculations of total price from the sale price & the original price.</li>
+                        <li>If the product is having a sale price then the sale price is considered into the cart page, but if the product has no discounted price, the cart should grab the original price instead the issue with grabbing it as 0 and making the cart total as 0.</li>
+                        <li>The calculation of the total cart price has gone wrong due to some syntax issues, which later have been debugged - identified & modified.</li>
+                        <li>Insertion of the cart data into the SQL database table.</li>
+                        <li>Creation of "order ids" from the ordered products & inserting the ordered products into the database table.</li>
+                        <li>Issue with the Express-Sessions, to store some value inside the sessions.</li>
+                      </ul> 
+                    These are some of the bugs which i have faced while developing this website & after the diagnosis of these bugs and limitations <span style="font-weight: bold;">this website has made sure to pass all the test cases till date </span>to ensure & match the required working conditions </p><br/>
+                    <p>This website is currently under development and several instances such as 
+                      <ul>
+                        <li>User & Admin Logins - Authentications</li>
+                        <li>Implementing the SSO login Authentications</li>
+                        <li>Admin Dashboard for idenfiying the Ordered items, Verifying the payments & Access to add a new product into the product list</li>
+                        <li>Customers orders list</li> etc.,
+                      </ul>
+                    </p>
+                      </blockquote>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-sm-12 col-lg-6">
+                <div class="card mb-3">
+                    <div class="card-header">
+                      Anniversary Sale
+                    </div>
+                    <div class="card-body">
+                        <img src="images/50percent.png" class="img-fluid rounded-start" alt="fiftypercentoff">
+                      <blockquote class="blockquote mb-0">
+                        <p style="text-align: justify;">This website is established 50 years ago succesfully running & we are celebrating the <span style="font-weight: bold;">"Golden Jubliee".</span> On this ocassion we are providing all our customers with 50% off for all the products available within the website. From the past 50 years, we have developed ourselves in providing all the required support for our customers. We have taken a huge initiative steps in maintaining the customer relations & improving overall customer support by developing from the needs of the customers. </p>
+                      </blockquote><br/>
+                      <a href="#" class="btn btn-dark mx-auto">View Products</a>
+                    </div>
+                  </div>
+            </div>
+        </div><hr/>
+        <div class="row">
+            <div class="col-sm-12 col-lg-6">
+                <div class="card mt-3 mb-3">
+                    <div class="card-header">
+                      Brands
+                    </div>
+                    <div class="card-body">
+                        <img src="images/brandlogos.webp" class="img-fluid rounded-start" alt="brandlogos">
+                      <blockquote class="blockquote mb-0">
+                        <p style="text-align: justify;">We have paired up with several top-most brands in and around UK in providing the support to our customers. Several brands include <span style="font-weight: bold;">Apple, Samsung, Xiaomi, Huawei, Motorola, Google Pixel, Sony, Oppo, OnePlus, etc".</span> <br/> Furthermore we are also in progress of developing our relationships with the various network providers in UK such as <span style="font-weight: bold;"> "Three, Vodafone, O2, EE, BT, Sky, Virgin Media, Plusnet, Tesco Mobile, etc"</span> in providing additional help & support such as mobile contracts via Amason is being developed.</p>
+                      </blockquote>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-sm-12 col-lg-6">
+                <div class="card mt-3">
+                    <div class="card-header">
+                      Additional Features
+                    </div>
+                    <div class="card-body">
+                        <img src="images/stripe.png" class="img-fluid rounded-start" alt="fiftypercentoff">
+                      <blockquote class="blockquote mb-0">
+                        <p style="text-align: justify;">We are establishing & integrating connections with the leading payment gateway <span style="font-weight: bold;">"Stripe"</span> for our customers with incorporating the developed feature with both the "Web & Mobile" application making the payments much more easier to the customers. This development is in progress & we will be rolling out the update regarding this integration feature in our website & mobile application soon. </p>
+                      </blockquote>
+                    </div>
+                  </div>
+            </div>
+        </div> <hr/>
+        <div class="row">
+            <div class="col-sm-12 col-lg-6">
+                <div class="card mt-3">
+                    <div class="card-header">
+                      Delivery Upgrade
+                    </div>
+                    <div class="card-body">
+                        <img src="images/expressdelivery.webp" class="img-fluid rounded-start" alt="brandlogos">
+                      <blockquote class="blockquote mb-0">
+                        <p style="text-align: justify;">We are upgrading the delivery options for our customers. Our <span style="font-weight: bold;">"Primme"</span> customers will be our top most priority in getting the product delivered. In addition to this we are also trying to develop the delivery experience for our "Non-Primme" customers. So we have brought up the feature called <span style="font-weight: bold;">"Express-Delivery".</span> With this feature the orders placed before 12PM the same day will be delivered by next day, whereas the <span style="font-weight: bold;">"Primme"</span> customers placing the orders before 12PM, will be receiving their product delivered by the evening of the same day. <span class="text-muted" style="font-size: 12px;">(Terms & Conditions apply)</span></p>
+                      </blockquote>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-sm-12 col-lg-6">
+                <div class="card mt-3">
+                    <div class="card-header">
+                      Returns & Refund
+                    </div>
+                    <div class="card-body">
+                        <img src="images/returns.jpeg" class="img-fluid rounded-start mx-auto" alt="fiftypercentoff">
+                      <blockquote class="blockquote mb-0">
+                        <p style="text-align: justify;">All the product returns with in 5 days of receiving will be "free", whereas the products which are requested for return from the 6th day will be charged a little. Kindly make sure all the products which are being returned should have the contents inside the package at the time of delivering the product. Any misuse of the product will not be taken care into consideration and the return process will not be initiated. All the new customers are requested to provide a time of 10-15min with our RPE (Returning Product Executive) and let them cross check the product throughly. Only after the product is verified & signed by the RPE, return process will be initiated.  </p>
+                      </blockquote>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</section>
+
+
+ <!-- APP DOWNLOAD -->
+<section id="appdownload">
+    <h1 class="display-4 fw-bold">Download our <span style="color: red;">Application</span> to know more...</h1><br/>
+      <button type="button" class="btn btn-dark btn-lg download-button btn-apple mx-auto"><i class="fab fa-apple"></i> Download</button>
+      <button type="button" class="btn btn-light btn-lg download-button mx-auto"><i class="fab fa-google-play"></i> Download</button>
+  </section>
+
+  <!-- FOOTER -->
+  <div class="container">
+    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+      <div class="col mb-3 text-center">
+        <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+          <img src="images/amazon-logo.svg" class="mx-auto" alt="logo-image" width="30" height="30" class="d-inline-block align-text-top">
+        </a>
+        <p class="text-muted">&copy; 2022</p>
+        <p>Designed & Developed by <span style="font-weight: bold;">Anupam Pammi</span></p>
+      </div>
+  
+      <div class="col mb-3">
+        
+      </div>
+  
+      <div class="col mb-3">
+        
+      </div>
+  
+      <div class="col mb-3 text-center">
+        <h5>Homepage </h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-muted">Home</a></li>
+          <li class="nav-item mb-2"><a href="#featured" class="nav-link p-0 text-muted">Sale</a></li>
+          <li class="nav-item mb-2"><a href="#brands" class="nav-link p-0 text-muted">Brands</a></li>
+          <li class="nav-item mb-2"><a href="#cta" class="nav-link p-0 text-muted">Features</a></li>
+          <li class="nav-item mb-2"><a href="#appdownload" class="nav-link p-0 text-muted">Download App</a></li>
+        </ul>
+      </div>
+  
+      <div class="col mb-3 text-center">
+        <h5>Other Sections</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="/about" class="nav-link p-0 text-muted">About</a></li>
+          <li class="nav-item mb-2"><a href="/products" class="nav-link p-0 text-muted">Products</a></li>
+          <li class="nav-item mb-2"><a href="/contact" class="nav-link p-0 text-muted">Contact Us</a></li>
+          <li class="nav-item mb-2"><a href="/cart" class="nav-link p-0 text-muted">Cart</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Login/Signup</a></li>
+        </ul>
+      </div>
+  
+    </footer>
+  </div>
+  
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+     <!-- Pre-Loader Script -->
+     <script>
+      var myVar;
+      function myFunction(){
+        myVar = setTimeout(showPage, 3000);
+      }
+      function showPage() {
+        document.getElementById("loading").style.display = "none";
+        document.getElementById("myDiv").style.display = "block";
+      }
+    </script>
+</body>
+
+</html>

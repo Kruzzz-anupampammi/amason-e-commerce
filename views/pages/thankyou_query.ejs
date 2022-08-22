@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- STYLESHEET -->
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <!-- BOOTSTRAP CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <!-- FONT AWESOME CDN -->
+  <script src="https://kit.fontawesome.com/0581082bd4.js" crossorigin="anonymous"></script>
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <title>Amason: Low Prices in every department</title>
+</head>
+
+<body onload="myFunction()">
+    <div id="loading"></div>
+
+  <!-- NAVBAR -->
+
+  <section id="navbar">
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">
+            <img src="images/amazon-logo.svg" alt="logo-image" width="30" height="30" class="d-inline-block align-text-top">
+            <span class="navbrand-span">Amason</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse text-center" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/products">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contact">Contact us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/cart"><i class="fa-solid fa-cart-shopping"></i> Cart</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/logout"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+</section>
+
+<!-- CHECKOUT -->
+
+<section id="cart">
+
+  <div class="container text-center">
+    <h1 class="fw-bold text-center mt-5"><i class="fa-solid fa-check"></i><p> We have <span style="color: green;">sent</span> your query to our developer </p></h1>
+    <p class="lead text-center text-muted">No Worries, we have received your request. We make sure that your query will be resolved soon.</p><br/>
+  
+    <br/>
+
+    <p>If you are not automatically redirected to the Homepage, <a href="/">Click here</a> to go back to Homepage</p>
+   
+    </div>
+</section>
+
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+     <!-- Pre-Loader Script -->
+     <script>
+        var myVar;
+        function myFunction(){
+          myVar = setTimeout(showPage, 3000);
+        }
+        function showPage() {
+          document.getElementById("loading").style.display = "none";
+          document.getElementById("myDiv").style.display = "block";
+        }
+      </script>
+</body>
+
+</html>
+
+
+    <!-- Include the PayPal JavaScript SDK; replace "test" with your own sandbox Business account app client ID -->
+    <script src="https://www.paypal.com/sdk/js?&client-id=ATPCTILUcDfW1_dvpUuK75EmbRne9oaKoR0ADocbl-_gIrq5LL2dyEL6mZ-vr98VuOiiAvi-Dd5xlJX8&currency=GBP"></script>
